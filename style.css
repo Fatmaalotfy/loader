@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.loader{
+    background-color:rgb(109, 202, 155);
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    animation-name:loader;
+    animation-duration:5000ms;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+}
+@keyframes loader{
+    0%{
+        background-color:rgb(109, 202, 155);
+        width: 10px;
+        height: 10px;
+        transform:translateX(50px);
+    }
+    25%{
+        background-color:rgb(81, 182, 131);
+        width: 20px;
+        height: 20px;
+        transform:translateX(25px);
+    }
+    50%{
+        background-color:rgb(91, 133, 172);
+        width: 25px;
+        height: 25px;
+    }
+    75%{
+        background-color:rgb(95, 151, 177);
+        width: 30px;
+        height: 30px;
+        transform:translateX(-25px);
+    }
+    100%{
+        color:rgb(56, 69, 190);
+        width: 50px;
+        height: 50px;
+        transform:translateX(50px);
+    }
+}
